@@ -1,0 +1,32 @@
+@use "templates/header.scss";
+@use "templates/presentation.scss";
+@use "templates/project.scss";
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-transform: uppercase;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  main {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+
+    section {
+      margin-bottom: 5rem;
+    }
+
+    .projects {
+
+    }
+  }
+}
+

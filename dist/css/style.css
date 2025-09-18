@@ -1,0 +1,96 @@
+header {
+  display: flex;
+  padding: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+header .name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.presentation {
+  box-sizing: border-box;
+  padding: 2rem;
+}
+.presentation h2 {
+  text-align: center;
+}
+.presentation .description {
+  text-align: justify;
+}
+.presentation .description p {
+  margin: 0;
+}
+.presentation .skills {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-transform: uppercase;
+}
+.presentation .skills ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects h2 {
+  text-align: center;
+}
+.projects .container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.projects .container .project {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-size: 40vw;
+  max-width: 400px;
+}
+.projects .container .project .cover {
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+.projects .container .project .content {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.projects .container .project .content .project_title {
+  text-transform: uppercase;
+  text-align: center;
+}
+.projects .container .project .content .project_description {
+  font-style: italic;
+  text-align: justify;
+}
+.projects .container .project .content .project_review {
+  width: auto;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Zalando Sans Expanded", sans-serif;
+  text-transform: uppercase;
+}
+
+* {
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+body main {
+  margin: 0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+body main section {
+  margin-bottom: 5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

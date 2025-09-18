@@ -1,0 +1,31 @@
+.presentation {
+  box-sizing: border-box;
+  padding: 2rem;
+
+  h2 {
+    text-align: center;
+  }
+
+  .description {
+    text-align: justify;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .skills {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    text-transform: uppercase;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}
