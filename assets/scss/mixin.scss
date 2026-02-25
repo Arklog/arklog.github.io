@@ -14,14 +14,17 @@
   padding: 0;
 }
 
-@mixin flex-wrap {
+@mixin flex-wrap($grow_child: true) {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-evenly;
 
-  &>* {
-    flex-grow: 1;
+  @if ($grow_child) {
+
+    &>* {
+      flex-grow: 1;
+    }
   }
 }
 

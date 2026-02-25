@@ -39,3 +39,15 @@ body {
 .flex-wrap {
   @include mixin.flex-wrap;
 }
+
+.flex-wrap-no-grow {
+  @include mixin.flex-wrap(false);
+}
+
+.flexcontainer-horizontal {
+  @include mixin.flexcontainer-horizontal;
+}
+
+.flexcontainer-vertical {
+  @include mixin.flexcontainer-vertical;
+}
