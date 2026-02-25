@@ -1,11 +1,11 @@
-export interface ProjectMinInterface {
+export interface ProjectInterface {
     name: string;
     smallDescription: string;
     description: string;
     image: string;
 }
 
-export const projects: ProjectMinInterface[] = [
+export const projects: ProjectInterface[] = [
     {
         name: "test",
         smallDescription: "test",
@@ -44,12 +44,5 @@ export const projects: ProjectMinInterface[] = [
     }
 ]
 
-export function ProjectMin(props: ProjectMinInterface) {
-    return (
-        <div className="project-min">
-            <h2>{props.name}</h2>
-            <p>{props.smallDescription}</p>
-            <img src={props.image} alt={props.name} />
-        </div>
-    );
-}
+export const projectsMap = new Map<string, ProjectInterface>(projects.map(project => [project.name, project]));
+

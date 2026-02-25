@@ -1,22 +1,8 @@
 import { createRoot } from "react-dom/client";
-import {ProjectMin, projects} from "./projects.js";
-
-function Header() {
-    return (
-        <header>
-            <h1>Header</h1>
-        </header>
-    );
-}
-
-function Footer() {
-    return (
-        <footer>
-            <h1>Footer</h1>
-        </footer>
-    );
-}
-
+import {ProjectMin} from "../elements/project_min.js";
+import { projects } from "../projects.js";
+import { Footer } from "../elements/footer.js";
+import { Header } from "../elements/header.js";
 
 function Main() {
     return (
@@ -44,6 +30,5 @@ export function Root() {
     );
 }
 
-console.log('test')
 const root = createRoot(document.querySelector('body')!)
 root.render(<Root />)
