@@ -15,6 +15,14 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+
+  @include mixin.flex-wrap;
+  @include mixin.flexcontainer-vertical;
+
+  header, footer {
+    flex-grow: 0;
+  }
 
   main {
     margin: 0;
@@ -25,9 +33,6 @@ body {
       margin-bottom: 5rem;
     }
 
-    .projects {
-
-    }
   }
 }
 
