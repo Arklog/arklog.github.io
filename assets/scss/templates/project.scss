@@ -1,50 +1,5 @@
-@import "../mixin.scss";
+@use "../mixin.scss";
 
-.projects {
-  h2 {
-    text-align: center;
-  }
-
-  .container {
-    @include flexcontainer-horizontal;
-
-    .project {
-      @include container-nopadding;
-
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      background-size: 40vw;
-
-      max-width: 400px;
-      //width: 100%;
-
-      .cover {
-        aspect-ratio: 16/9;
-        width: 100%;
-      }
-
-      .content {
-        box-sizing: border-box;
-        padding: 10px;
-
-        .project_title {
-          text-transform: uppercase;
-          text-align: center;
-        }
-
-        .project_description {
-          font-style: italic;
-          text-align: justify;
-        }
-
-        .project_review {
-          width: auto;
-
-          .pros, .cons {
-          }
-        }
-      }
-    }
-  }
+.project-min {
+  @include mixin.container;
 }

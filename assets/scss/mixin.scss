@@ -14,7 +14,7 @@
   padding: 0;
 }
 
-@mixin flexcontainer {
+@mixin flex-wrap {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -26,11 +26,9 @@
 }
 
 @mixin flexcontainer-horizontal {
-  @include flexcontainer;
   flex-direction: row;
 }
 
 @mixin flexcontainer-vertical {
-  @include flexcontainer;
   flex-direction: column;
 }

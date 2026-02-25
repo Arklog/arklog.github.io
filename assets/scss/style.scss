@@ -1,6 +1,7 @@
 @use "templates/header.scss";
 @use "templates/presentation.scss";
 @use "templates/project.scss";
+@use "mixin.scss";
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Zalando Sans Expanded", sans-serif;
@@ -30,3 +31,6 @@ body {
   }
 }
 
+.flex-wrap {
+  @include mixin.flex-wrap;
+}

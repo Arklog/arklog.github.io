@@ -17,6 +17,13 @@
   },
   "homepage": "https://github.com/Arklog/arklog.github.io#readme",
   "devDependencies": {
-    "sass": "^1.92.1"
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "sass": "^1.97.3",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   }
 }

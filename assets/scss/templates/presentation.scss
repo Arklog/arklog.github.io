@@ -1,7 +1,7 @@
-@import "../mixin.scss";
+@use "../mixin.scss";
 
 .presentation {
-  @include flexcontainer;
+  @include mixin.flex-wrap;
   box-sizing: border-box;
   padding: 2rem;
 
@@ -10,7 +10,7 @@
   }
 
   .description {
-    @include container;
+    @include mixin.container;
     text-align: justify;
 
     p {
@@ -19,11 +19,11 @@
   }
 
   .skills {
-    @include flexcontainer-horizontal;
+    @include mixin.flexcontainer-horizontal;
     text-transform: uppercase;
 
     &>div {
-      @include container;
+      @include mixin.container;
     }
 
     ul {
