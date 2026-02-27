@@ -20,6 +20,24 @@ export const projects: ProjectInterface[] = [
         url: "https://github.com/Arklog/transcendence"
     },
     {
+        name: "Inception",
+        description: "Inception est un projet de conteneurisation et d'orchestration de services, visant à créer une infrastructure de microservices pour une application web. Le projet utilise Docker Compose pour la conteneurisation permettant ainsi de déployer, gérer et faire évoluer facilement les services de l'application.",
+        technologies: [
+            "Docker",
+            "Nginx"
+        ],
+        url: "git@github.com:Arklog/inception.git"
+    },
+    {
+        name: "IRC",
+        description: "Ce projet consiste à créer un serveur de chat en ligne utilisant le protocole IRC (Internet Relay Chat). Le serveur permettra aux utilisateurs de se connecter, de rejoindre des canaux de discussion et d'échanger des messages en temps réel.",
+        technologies: [
+            "C++",
+            "GNU Make"
+        ],
+        url: "https://github.com/Quoicobhelia/irc"
+    },
+    {
         name: "KFS - 1",
         description: "L'objectif de ce projet est de creer un kernel repondant a des specifications tres simples",
         technologies: [

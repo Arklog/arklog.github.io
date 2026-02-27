@@ -2,4 +2,14 @@
 
 .project-min {
   @include mixin.container;
+
+  h2 {
+    text-align: center;
+
+  }
+
+  div.flexcontainer-horizontal {
+    gap: .2rem;
+    justify-content: flex-start;
+  }
 }
