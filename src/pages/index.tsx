@@ -4,6 +4,7 @@ import {projects} from "../projects.js";
 import {Footer} from "../elements/footer.js";
 import {Header} from "../elements/header.js";
 import {HorizontalContainer} from "../elements/utils.js";
+import {ExperienceList} from "../elements/experience.js";
 
 function Presentation() {
     return (
@@ -27,6 +28,7 @@ function Main() {
     return (
         <main>
             <Presentation/>
+            <ExperienceList/>
             <section className="projects">
                 <div className="flex-wrap">
                     {

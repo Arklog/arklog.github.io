@@ -1,4 +1,5 @@
-import {HorizontalContainer} from "./utils.js";
+import {HorizontalContainer, VerticalContainer} from "./utils.js";
+import {experiences} from "../experiences.js";
 
 export interface ExperienceProps {
     dateBegin: string;
@@ -28,9 +29,17 @@ export function Experience(props: ExperienceProps) {
     }
 
     return (
-        <HorizontalContainer wrap={false} elements={[
+        <HorizontalContainer wrap={true} elements={[
             <ExperienceDate dateBegin={props.dateBegin} dateEnd={props.dateEnd}/>,
             <ExperienceInfo company={props.company} position={props.position} description={props.description}/>
         ]}/>
+    )
+}
+
+export function ExperienceList() {
+    return (
+        <section className="experiences">
+            <VerticalContainer wrap={false} elements={experiences.map((experience) => <Experience {...experience} />)}/>
+        </section>
     )
 }

@@ -7,9 +7,18 @@ export interface HorizontalContainerProps {
 
 export function HorizontalContainer(props: HorizontalContainerProps) {
     let flexClass = `flexcontainer-horizontal ${props.wrap ? "flex-wrap" : "flexcontainer"}`;
-    console.log(flexClass);
     return (
         <div className={flexClass}>
+            {props.elements}
+        </div>
+    )
+}
+
+export function VerticalContainer(props: HorizontalContainerProps) {
+    let flexClass = `flexcontainer-vertical ${props.wrap ? "flex-wrap-no-grow" : "flexcontainer"}`;
+    return (
+        <div className={flexClass}>
+
             {props.elements}
         </div>
     )

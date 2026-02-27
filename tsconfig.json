@@ -9,5 +9,7 @@
     "skipLibCheck": true,
     "jsx": "react-jsx"
   },
-  "files": ["src/pages/index.tsx", "src/pages/project.tsx"],
+  "files": [
+    "src/pages/index.tsx"
+  ]
 }
