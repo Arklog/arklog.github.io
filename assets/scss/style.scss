@@ -62,3 +62,12 @@ body {
   background-color: #eeeeee;
   padding: .5rem;
 }
+
+.projects .flex-wrap {
+  justify-content: right;
+
+  .project-min {
+    flex-basis: 50%;
+    flex-grow: 0;
+  }
+}

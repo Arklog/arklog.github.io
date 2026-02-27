@@ -2,33 +2,14 @@
 
 .presentation {
   @include mixin.flex-wrap;
-  box-sizing: border-box;
-  padding: 2rem;
+  @include mixin.flexcontainer-vertical;
 
-  h2 {
-    text-align: center;
-  }
+  justify-content: right;
 
-  .description {
-    @include mixin.container;
-    text-align: justify;
-
-    p {
-      margin: 0;
-    }
-  }
-
-  .skills {
-    @include mixin.flexcontainer-horizontal;
-    text-transform: uppercase;
-
-    &>div {
-      @include mixin.container;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
+  .flexcontainer-horizontal {
+    >* {
+      flex-basis: 50%;
+        flex-grow: 0;
     }
   }
 }

@@ -15,46 +15,16 @@ header .name {
   justify-content: space-evenly;
 }
 .presentation > * {
+  flex-basis: 0;
   flex-grow: 1;
 }
 .presentation {
-  box-sizing: border-box;
-  padding: 2rem;
+  flex-direction: column;
+  justify-content: right;
 }
-.presentation h2 {
-  text-align: center;
-}
-.presentation .description {
-  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.53);
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-.presentation .description .cover {
-  border-radius: 5px 5px 0 0;
-}
-.presentation .description {
-  text-align: justify;
-}
-.presentation .description p {
-  margin: 0;
-}
-.presentation .skills {
-  flex-direction: row;
-  text-transform: uppercase;
-}
-.presentation .skills > div {
-  box-shadow: 0px 0px 6px 0 rgba(0, 0, 0, 0.53);
-  border-radius: 5px;
-  box-sizing: border-box;
-  padding: 1rem;
-}
-.presentation .skills > div .cover {
-  border-radius: 5px 5px 0 0;
-}
-.presentation .skills ul {
-  list-style-type: none;
-  padding: 0;
+.presentation .flexcontainer-horizontal > * {
+  flex-basis: 50%;
+  flex-grow: 0;
 }
 
 .project-min {
@@ -79,6 +49,21 @@ h1, h2, h3, h4, h5, h6 {
 body {
   margin: 0;
   padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+body > * {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+body {
+  flex-direction: column;
+}
+body header, body footer {
+  flex-grow: 0;
 }
 body main {
   margin: 0;
@@ -88,6 +73,11 @@ body main {
 body main section {
   margin-bottom: 5rem;
 }
+
+.flexcontainer {
+  display: flex;
+}
+
 .flex-wrap {
   display: flex;
   flex-wrap: wrap;
@@ -95,7 +85,38 @@ body main section {
   justify-content: space-evenly;
 }
 .flex-wrap > * {
+  flex-basis: 0;
   flex-grow: 1;
+}
+
+.flex-wrap-no-grow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+}
+
+.flexcontainer-horizontal {
+  flex-direction: row;
+}
+
+.flexcontainer-vertical {
+  flex-direction: column;
+}
+
+.rounded-container {
+  font-size: 0.8rem;
+  border-radius: 0.5rem;
+  background-color: #eeeeee;
+  padding: 0.5rem;
+}
+
+.projects .flex-wrap {
+  justify-content: right;
+}
+.projects .flex-wrap .project-min {
+  flex-basis: 50%;
+  flex-grow: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

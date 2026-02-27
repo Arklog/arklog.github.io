@@ -6,7 +6,7 @@ export interface ExperienceProps {
     dateEnd: string;
     company: string;
     position: string;
-    description: string;
+    description: string[];
 }
 
 
@@ -19,11 +19,13 @@ export function Experience(props: ExperienceProps) {
         )
     }
 
-    function ExperienceInfo(props: { company: string, position: string, description: string }) {
+    function ExperienceInfo(props: { company: string, position: string, description: string[] }) {
         return (
-            <div className="experience-info">
-                <h2>{props.position} @ {props.company}</h2>
-                <p>{props.description}</p>
+            <div className="experience-info" id="experiences">
+                <h3>{props.position} @ {props.company}</h3>
+                <ul>
+                    {props.description.map((item) => <li>{item}</li>)}
+                </ul>
             </div>
         )
     }
@@ -39,6 +41,7 @@ export function Experience(props: ExperienceProps) {
 export function ExperienceList() {
     return (
         <section className="experiences">
+            <h2>Experiences</h2>
             <VerticalContainer wrap={false} elements={experiences.map((experience) => <Experience {...experience} />)}/>
         </section>
     )
