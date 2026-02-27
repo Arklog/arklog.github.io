@@ -4,7 +4,8 @@
   "description": "My portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc && sass --no-source-map assets/scss/style.scss:dist/css/style.css"
   },
   "repository": {
     "type": "git",
