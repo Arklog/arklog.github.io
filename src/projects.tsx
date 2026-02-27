@@ -8,7 +8,7 @@ export interface ProjectInterface {
 export const projects: ProjectInterface[] = [
     {
         name: "Transcendence",
-        description: "Transcendence est un projet de jeu multijoueur en ligne inspiré du célèbre jeu 'Pong'. Le projet vise à créer une expérience de jeu immersive et compétitive, où les joueurs peuvent s'affronter dans des arènes spatiales en utilisant des raquettes pour renvoyer une balle et marquer des points.",
+        description: "Transcendence est un projet de jeu multijoueur en ligne inspiré du célèbre jeu 'Pong'. Le projet vise à créer une expérience de jeu immersive et compétitive, où les joueurs peuvent s'affronter dans des arènes en utilisant des raquettes pour renvoyer une balle et marquer des points.",
         technologies: [
             "Python",
             "Django",
