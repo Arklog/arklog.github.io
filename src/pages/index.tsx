@@ -10,9 +10,7 @@ function Main() {
             <section className="projects">
                 <div className="flex-wrap">
                     {
-                        projects.map((project) => (<ProjectMin {...project}/>)).concat(
-                            projects.map((project) => (<ProjectMin {...project}/>))
-                        )
+                        projects.map((project) => (<ProjectMin {...project}/>))
                     }
                 </div>
             </section>

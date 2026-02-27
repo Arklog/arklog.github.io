@@ -51,3 +51,10 @@ body {
 .flexcontainer-vertical {
   @include mixin.flexcontainer-vertical;
 }
+
+.rounded-container {
+  font-size: .8rem;
+  border-radius: .5rem;
+  background-color: #eeeeee;
+  padding: .5rem;
+}

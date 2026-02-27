@@ -1,31 +1,22 @@
 export interface ProjectInterface {
     name: string;
-    smallDescription: string;
     description: string;
-    image: string;
     technologies: string[];
-    specifications: string[];
-    challenges: string[];
-    toImprove: string[];
+    url?: string;
 }
 
 export const projects: ProjectInterface[] = [
     {
         name: "KFS - 1",
-        smallDescription: "Premier project d'une suite de project amenant a la creation d'un kernel",
         description: "L'objectif de ce projet est de creer un kernel repondant a des specifications tres simples",
-        image: "https://via.placeholder.com/150",
         technologies: [
             "C++",
-            "i386 assembly"
+            "i386 assembly",
+            "GNU Make",
+            "CMake",
+            "Docker",
+            "Qemu"
         ],
-        specifications: [
-            "Prise en charge de l'affichage en mode texte (VGA)",
-        ],
-        challenges: [
-            ""
-        ],
-        toImprove: []
     }
 ]
 
