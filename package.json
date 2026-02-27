@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc && sass assets/scss/style.scss:dist/css/style.css"
+    "build": "tsc && sass assets/scss/style.scss:dist/css/style.css",
+    "build:typescript": "tsc",
+    "build:scss": "sass assets/scss/style.scss:dist/css/style.css"
   },
   "repository": {
     "type": "git",
