@@ -56,7 +56,7 @@ function Main() {
             <ExperienceList/>
             <section className="projects">
                 <h2>Projets</h2>
-                <div className="flex-wrap">
+                <div className="flex-wrap flexcontainer-vertical">
                     {
                         projects.map((project) => (<ProjectMin {...project}/>))
                     }

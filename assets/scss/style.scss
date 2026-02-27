@@ -18,7 +18,16 @@ body {
   min-height: 100vh;
 
   @include mixin.flex-wrap;
-  @include mixin.flexcontainer-vertical;
+  @media screen and (max-width: 1000px) {
+    @include mixin.flexcontainer-vertical;
+    header {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+  }
+  @media screen and (min-width: 1000px) {
+    @include mixin.flexcontainer-horizontal;
+  }
 
   header, footer {
     flex-grow: 0;
@@ -49,7 +58,13 @@ body {
 }
 
 .flexcontainer-horizontal {
-  @include mixin.flexcontainer-horizontal;
+  @media screen and (max-width: 1000px) {
+    @include mixin.flexcontainer-vertical;
+  }
+
+  @media screen and (min-width: 1000px) {
+    @include mixin.flexcontainer-horizontal;
+  }
 }
 
 .flexcontainer-vertical {
