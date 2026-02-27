@@ -1,7 +1,6 @@
 import {createRoot} from "react-dom/client";
 import {ProjectMin} from "../elements/project_min.js";
 import {projects} from "../projects.js";
-import {Footer} from "../elements/footer.js";
 import {Header} from "../elements/header.js";
 import {HorizontalContainer, VerticalContainer} from "../elements/utils.js";
 import {ExperienceList} from "../elements/experience.js";
@@ -77,9 +76,6 @@ export function Root() {
                     {/*<Footer/>*/}
                 </div>
             ]} wrap={false}/>
-            {/*<Header/>*/}
-            {/*<Main/>*/}
-            {/*<Footer/>*/}
         </>
     );
 }
