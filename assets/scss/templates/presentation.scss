@@ -6,6 +6,10 @@
 
   justify-content: right;
 
+  p {
+    text-align: justify;
+  }
+
   .flexcontainer-horizontal {
     >* {
       flex-basis: 50%;

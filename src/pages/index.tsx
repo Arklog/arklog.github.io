@@ -10,29 +10,23 @@ function Presentation() {
         return (
             <VerticalContainer wrap={false} elements={
                 [
-                    <p>Diplômé de l’école 42, je suis <strong>développeur backend junior</strong> spécialisé en Python
-                        et TypeScript,
-                        avec une forte appétence pour l’architecture des systèmes et les
-                        environnements <strong>DevOps</strong>.
-                        <br/> Je conçois et
-                        développe des applications robustes en utilisant notamment Django et Express, avec une attention
-                        particulière portée à la qualité du code, à la performance et à la maintenabilité.
-                        <br/>À l’aise en environnement <strong>Linux</strong>, j’intègre des pratiques <strong>DevOps
-                            modernes : conteneurisation avec Docker, mise en place de pipelines CI/CD et déploiement sur
-                            AWS</strong>. J’ai déjà mené des projets jusqu’en
-                        production,
-                        en assurant leur stabilité, leur sécurité et leur fiabilité.
-                        <br/><strong>Autonome, proactif et rigoureux, je m’adapte rapidement à de nouveaux
-                            environnements techniques</strong> et
-                        monte
-                        efficacement en compétence sur des technologies variées. Ma capacité d’apprentissage rapide me
-                        permet
-                        d’être opérationnel rapidement et d’apporter une réelle valeur sur des projets exigeants.
+                    <p>Je suis développeur backend, avec de l'expérience dans le DevOps et le Cloud.</p>,
+                    <p>
+                        Durant mon parcours professionnel et académique, j'ai réalisé plusieurs projets dans le domaine du backend. <br/>
+                        Ce qui m'a permis d'acquérir une solide expertise dans la conception et le développement d'applications backend performantes et scalables. <br/>
+                        Notamment dans le développement d'API RESTful, la gestion de bases de données relationnelles et NoSQL, ainsi que l'implémentation de microservices.
                     </p>,
                     <p>
-                        Aujourd’hui, je recherche un CDI me permettant de contribuer à des projets techniques ambitieux,
-                        d’évoluer sur des architectures variées et de continuer à développer mon expertise backend et
-                        DevOps.
+                        J'ai également pu développer mes compétences en DevOps grâce à des projets ou j'ai mis en place des pipelines CI/CD, utilisé des outils de conteneurisation comme Docker et déployé des applications sur des plateformes cloud telles que AWS. <br/>
+                        Par conséquent, l'automatisation des processus de développement et de déploiement est une partie intégrante de mon approche pour assurer la qualité et la fiabilité des applications que je développe.
+                    </p>,
+                    <p>
+                        Dans ce même parcours, j'ai déployé des applications Cloud sur AWS, dans le but de garantir leur scalabilité, leur disponibilité et leur résilience. <br/>
+                        J'ai donc acquis une bonne compréhension des services AWS tels que EC2, S3, RDS et Lambda, et je suis capable de concevoir des architectures cloud efficaces pour répondre aux besoins spécifiques des projets.
+                    </p>,
+                    <p>
+                        Pour réaliser ces projets, il était important de garder une bonne coordination avec les équipes de travail, de communiquer et de réfléchir ensemble dans une logique d'optimisation et d'amélioration continue. <br/>
+                        Et individuellement rester conscient des points d'amélioration, de façon à monter en compétence.
                     </p>
                 ]
             }/>
