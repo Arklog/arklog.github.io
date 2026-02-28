@@ -1,11 +1,4 @@
-export interface ProjectInterface {
-    name: string;
-    description: string;
-    technologies: string[];
-    url?: string;
-}
-
-export const projects: ProjectInterface[] = [
+export const projects = [
     {
         name: "Transcendence",
         description: "Transcendence est un projet de jeu multijoueur en ligne inspiré du célèbre jeu 'Pong'. Le projet vise à créer une expérience de jeu immersive et compétitive, où les joueurs peuvent s'affronter dans des arènes en utilisant des raquettes pour renvoyer une balle et marquer des points.",
@@ -59,8 +52,5 @@ export const projects: ProjectInterface[] = [
         ],
         url: "https://github.com/Arklog/minishell"
     }
-
-]
-
-export const projectsMap = new Map<string, ProjectInterface>(projects.map(project => [project.name, project]));
-
+];
+export const projectsMap = new Map(projects.map(project => [project.name, project]));

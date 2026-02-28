@@ -1,6 +1,4 @@
-import {ExperienceProps} from "./elements/experience.js";
-
-export const experiences: ExperienceProps[] = [
+export const experiences = [
     {
         dateBegin: "2025-01-20",
         dateEnd: "2025-07-20",
@@ -11,4 +9,4 @@ export const experiences: ExperienceProps[] = [
             "Mise en place d'une infrastructure de monitoring",
         ]
     }
-]
+];
