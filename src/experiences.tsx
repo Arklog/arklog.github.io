@@ -7,8 +7,11 @@ export const experiences: ExperienceProps[] = [
         company: "Kleep.ai",
         position: "Stagiaire Backend / DevOps",
         description: [
-            "Developpement de l'API Kleep",
-            "Mise en place d'une infrastructure de monitoring",
+            "Automatisation des tâches de déploiement et opérations via Python, Bash et GitHub Actions réduisant les interventions manuelles de 75%.",
+            "Développement d’outils internes accélérant l’intégration et le déploiement de nouveaux clients de 90%.",
+            "Mise en place d’un système de monitoring et d’alerte multi-plateforme (Grafana, Sentry, CloudWatch, notifications Slack).",
+            "Contribution à l’amélioration de l’API et de l’infrastructure cloud AWS (S3, Lambda, ECS, EC2).",
+            "Réduction de 80% des appels API OpenAI au travers d’un système de cache."
         ]
     }
 ]

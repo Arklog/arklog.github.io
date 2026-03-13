@@ -8,7 +8,12 @@ export interface ProjectInterface {
 export const projects: ProjectInterface[] = [
     {
         name: "Transcendence",
-        description: "Transcendence est un projet de jeu multijoueur en ligne inspiré du célèbre jeu 'Pong'. Le projet vise à créer une expérience de jeu immersive et compétitive, où les joueurs peuvent s'affronter dans des arènes en utilisant des raquettes pour renvoyer une balle et marquer des points.",
+        description: "Creation d'un site de jeu de 'Pong' multijoueur en ligne avec une architecture microservices." +
+            " Le projet utilise Django pour le backend, Angular pour le frontend, et Docker pour la conteneurisation." +
+            " Le projet comprend des fonctionnalités telles que l'authentification des utilisateurs (OAuth2), la gestion" +
+            " des parties en temps réel au travers de WebSockets, un système d'expérience et de classement des joueurs," +
+            " un systeme de tournois ainsi que" +
+            " des salons de discussion, et une interface utilisateur responsive.",
         technologies: [
             "Python",
             "Django",
@@ -21,16 +26,23 @@ export const projects: ProjectInterface[] = [
     },
     {
         name: "Inception",
-        description: "Inception est un projet de conteneurisation et d'orchestration de services, visant à créer une infrastructure de microservices pour une application web. Le projet utilise Docker Compose pour la conteneurisation permettant ainsi de déployer, gérer et faire évoluer facilement les services de l'application.",
+        description: "Inception est un projet de conteneurisation et d'orchestration de services, visant à créer une " +
+            "infrastructure de microservices pour une application web. Le projet utilise Docker Compose pour la " +
+            "conteneurisation permettant ainsi de déployer, gérer et faire évoluer facilement les services de l'application.",
         technologies: [
             "Docker",
-            "Nginx"
+            "Nginx",
+            "MariaDB",
+            "WordPress",
+            "Redis"
         ],
         url: "git@github.com:Arklog/inception.git"
     },
     {
         name: "IRC",
-        description: "Ce projet consiste à créer un serveur de chat en ligne utilisant le protocole IRC (Internet Relay Chat). Le serveur permettra aux utilisateurs de se connecter, de rejoindre des canaux de discussion et d'échanger des messages en temps réel.",
+        description: "Creation d'un serveur de chat IRC en C++, avec gestion asynchrone des sockets. Implementations de " +
+            "commandes basiques telles que NICK, USER, JOIN, PART, PRIVMSG, etc... Le serveur supporte les connexions " +
+            "simultanées de plusieurs clients et la gestion de canaux de discussion.",
         technologies: [
             "C++",
             "GNU Make"
@@ -39,7 +51,8 @@ export const projects: ProjectInterface[] = [
     },
     {
         name: "KFS - 1",
-        description: "L'objectif de ce projet est de creer un kernel repondant a des specifications tres simples",
+        description: "La premiere partie d'un kernel sous architecture x86 ecrit en C++, l'objectif etant d'avoir un kernel minimaliste capable" +
+            " de booter, de prendre en charge le multiboot, d'afficher des messages a l'ecran et de recevoir des inputs utilisateur.",
         technologies: [
             "C++",
             "i386 assembly",
