@@ -1,11 +1,4 @@
-export interface ProjectInterface {
-    name: string;
-    description: string;
-    technologies: string[];
-    url?: string;
-}
-
-export const projects: ProjectInterface[] = [
+export const projects = [
     {
         name: "Transcendence",
         description: "Creation d'un site de jeu de 'Pong' multijoueur en ligne avec une architecture microservices." +
@@ -72,8 +65,5 @@ export const projects: ProjectInterface[] = [
         ],
         url: "https://github.com/Arklog/minishell"
     }
-
-]
-
-export const projectsMap = new Map<string, ProjectInterface>(projects.map(project => [project.name, project]));
-
+];
+export const projectsMap = new Map(projects.map(project => [project.name, project]));

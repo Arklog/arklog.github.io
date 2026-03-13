@@ -1,6 +1,4 @@
-import {ExperienceProps} from "./elements/experience.js";
-
-export const experiences: ExperienceProps[] = [
+export const experiences = [
     {
         dateBegin: "2025-01-20",
         dateEnd: "2025-07-20",
@@ -14,4 +12,4 @@ export const experiences: ExperienceProps[] = [
             "Réduction de 80% des appels API OpenAI au travers d’un système de cache."
         ]
     }
-]
+];
